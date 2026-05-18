@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            //1.String primitive - Confusion and code is not neat and clean
+            const str = 'My name is \n' +
+            '\'Aswath\'';
+            console.log(str);
+
+
+            //1.1 TEMPLATE = ` `; - Clean and no confusion
+            const msg = `My name is
+'Aswath' `;
+            console.log(msg);
+
+
+
+            //2. `${}` - Used for reused contents
+            const name = 'Aswath';
+            const greet = 'Dear Sir';
+
+const mail = ` 
+ Hii ${name}
+ ${greet}
+ Thank you for Comming !!
+`;
+console.log(mail);
+
+    </script>
+</body>
+</html>
