@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            // CONST = cannot be changed - object can be changed {key : 'value'}
+
+            //1. - Inside Function and Outside Function is not equal
+            if(true){
+                const constVariable = '❤️'
+                console.log(constVariable);
+            }
+            constVariable = '💙';
+            console.log(constVariable);
+
+
+            
+            //2. With same variable name 
+            const constVariable2 = '2';
+            // const constVariable2 = '3'; Error - bcoz cannot have same name
+            console.log(constVariable2);
+
+
+
+            //3. Object
+            const obj = {name : 'Aswath'};
+            console.log(obj.name); // Aswath
+            obj.name = 'Hema';
+            console.log(obj.name); // Hema
+    </script>
+</body>
+</html>

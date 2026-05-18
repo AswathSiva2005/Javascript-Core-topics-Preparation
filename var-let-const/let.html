@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            // LET = Function scoped - cannot be changed
+
+            //1. Prints after function ends
+            if(true){
+                let letVariable = 'This is ❤️'
+                console.log(letVariable); // Prints correctly
+            }
+            // console.log(letVariable); Error - bcoz outside function
+
+
+
+            //2. Prints before declaration - Error
+            if(true){
+                // console.log(letVariable2); Error - bcoz This is prints before Declared
+
+                let letVariable2 = 'This is prints after Declared'
+
+                console.log(letVariable2); // Prints correctly
+            }
+    </script>
+</body>
+</html>

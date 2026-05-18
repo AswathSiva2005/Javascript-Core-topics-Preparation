@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // VAR = Block scoped - it can be changed
+
+        //1. inside and outside function with name variable name
+        if(true){
+            var varVariable = 'This is ❤️ (changed)'
+        }
+            varVariable = 'This is 💙 (changed)'; // Value is changed in output
+            console.log(varVariable);
+
+
+        //2. Prints before declaration - undefined
+        if(true){
+            console.log(varVariable2); // undefined - bcoz declared after console so code check line by line
+
+            var varVariable2 = 'This is Declared after';
+
+            console.log(varVariable2); // This is Declared after
+        }
+    </script>
+
+
+</body>
+</html>
