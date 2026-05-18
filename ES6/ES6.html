@@ -1,0 +1,18 @@
+<!-- ES6 module = it is a external file that contains resuable code and can be imported to other js files -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+
+        import {num1, addOperation} from './operation.js';
+        const add = addOperation(3);
+        console.log(add);
+    </script>
+</body>
+</html>
