@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            // ARROW FUNCTION = function without a name... const fun1 = (a,b) => {}
+
+            //1. Without parameter
+            const fun1 = () => {
+                console.log(3 + 2);
+            }
+            fun1();
+
+            //2. With parameter
+            const fun2 = (a,b) => {
+                console.log(a + b);
+            }
+            fun2(5,2);
+            fun2(1,); //NaN
+            fun2(); // NaN
+
+
+            //3. Very very simple syntax
+            const fun3 = a => console.log(a);
+            fun3(9);
+    </script>
+</body>
+</html>
