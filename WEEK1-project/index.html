@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h2 id="title"></h2>
+    <script>
+            const title = [
+                {
+                    name : 'Study',
+                    desc : '3hrs of study'
+                },
+                {
+                    name : 'Walking',
+                    desc : '1hrs of walking'
+                },
+                {
+                    name : 'Sleep',
+                    desc : '7.5hrs of study'
+                }
+            ]
+
+            const allTitle = title.map((titles) => {
+                return titles.name;
+            })
+
+            title.forEach((titles) => {
+                document.getElementById('title').innerHTML = titles.name;
+            })
+
+            // document.getElementById('title').innerHTML = allTitle;
+    </script>
+</body>
+</html>
