@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            // SPREAD or REST operator = array or string expanded into seperate elements
+            //                            (to unpack elements)
+
+            //1.
+            let numbers = [1,2,3,4,5];
+            let maximum = Math.max(numbers);
+
+            console.log(maximum) // NaN - bcoz it cannot find in array so we want to seperate it !!
+
+            // ...name - to seperate into single elements
+            let minimum = Math.min(...numbers);
+            console.log(minimum);
+
+
+            //2. - can store extraelemts also
+            let fruits = ['apple','orange','tomato','onion'];
+            let [f1,f2,...extraValues] = fruits;
+
+            console.log(fruits[0]);
+            console.log(...extraValues);
+
+    </script>
+</body>
+</html>
