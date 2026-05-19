@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            const fruits = [
+                // {name : 'apple', price : 200}, greater than 100
+                {name : 'banana', price : 75},
+                {name : 'orange', price : 90},
+                // {name : 'grapes', price : 140}, greater than 100
+                {name : 'watermelon', price : 40}
+            ]
+            console.log(fruits);
+
+            const expensiveFruits = fruits.every((fruit) => {
+                return fruit.price <= 100; // checks every element in array is less than 100
+            });
+            console.log(expensiveFruits);
+    </script>
+</body>
+</html>
