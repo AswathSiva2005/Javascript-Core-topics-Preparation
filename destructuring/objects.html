@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            // DESTRUCTRUING = extract values from arrays and objects,
+            //                 then assign to variables in a conveniant way
+            //                 {} = to perform objects
+
+            //1. Extract values from objects
+
+            var person1 = {
+                name : 'Aswath',
+                age : 21,
+                mark : 7.21,
+                job : 'IT'
+            }
+            
+            var person2 = {
+                name : 'Hema',
+                age : 20,
+                mark : 7.80
+            }
+
+            var {name, age, ...extraValues} = person1;
+            console.log(extraValues);
+
+            var {name, age, job = "Study"} = person2;
+            console.log(job);
+
+
+            //2. Object to function parameter
+            const subject = {
+                subName : 'Java',
+                sec : 'A'
+            }
+            courses(subject);
+
+            function courses({subName,sec}){
+                console.log(`Subject name : ${subName}`);
+            }
+
+    </script>
+</body>
+</html>

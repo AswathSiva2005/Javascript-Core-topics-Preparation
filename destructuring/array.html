@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            // DESTRUCTRUING = extract values from arrays and objects,
+            //                 then assign to variables in a conveniant way
+            //                 [] = to perform arrays
+
+
+            //1. Swap value of two variables
+            let a = '❤️';
+            let b = '💙';
+
+            [a,b] = [b,a];
+            console.log(a);
+            console.log(b);
+
+
+            //2. Swap elements in an array
+            const colors = ['black', 'red', 'blue', 'white'];
+            // want to swap black and white
+
+            [colors[0],colors[1]] = [colors[3],colors[0]];
+            console.log(colors[0]);
+            console.log(colors[1]);
+            console.log(colors);
+
+
+            //3. Assign array to variables
+            const fruits = ['apple','orange','banana','onion','carrot'];
+
+            const [firstFruit, SecFruit, ThirdFruit,...extraVegi] = fruits;
+            console.log(firstFruit);
+            console.log(SecFruit);
+            console.log(ThirdFruit);
+            console.log(...extraVegi);
+            console.log(extraVegi);
+
+    </script>
+</body>
+</html>
