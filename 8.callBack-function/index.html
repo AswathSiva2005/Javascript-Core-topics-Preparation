@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="sumResult"></h1>
+
+
+    <script>
+            // callBack = a function that is passed as an parameter to another function
+            
+            //            used to handle asynchronous operations
+            //            1. Reading a file -> it take to long so when it read fully then to display the context
+           
+            //            "Hey, When you're done, call this next. "
+
+            //1.
+            hello(goodBye);
+            hello(wait);
+
+            function hello(callBack){
+                console.log("Hello !!");
+                callBack();
+            }
+
+            function wait(hello){
+                console.log("Wait !");
+            }
+
+            function goodBye(hello){
+                console.log("Good Bye !!");
+            }
+
+            
+            //2.
+
+            sum(displayHTML, 5, 3);
+            sum(displayResult, 5, 3);
+
+            function sum(callBack, a, b){
+                const result = a + b;
+                callBack(result);
+            }
+
+            function displayResult(result){
+                console.log(result);
+            }
+
+            function displayHTML(result){
+                document.getElementById('sumResult').textContent = result;
+            }
+    </script>
+
+</body>
+</html>
