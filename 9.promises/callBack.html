@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            // PROMISE = It is an object that manages asynchronous operations.
+            //           It wrap a Promise Object around {asynchronous code}.
+            //           "It promise to return a value".
+            //           PENDING -> RESOLVED(success) or REJECTED(failded).
+            //           new promise (( resolve, reject) => {asynchronous code} )
+
+            // 1. Walk the Dog
+            // 2. Clean the Kitchen
+            // 3. Take out the Trash
+
+            function dog(callBack){
+                setTimeout(() => {
+                    console.log("🐕🦴");
+                }, 1500);
+                callBack();
+            }
+
+            function Kitchen(callBack){
+                setTimeout(() => {
+                    console.log("🍉🍔");
+                }, 3000)
+                callBack();
+            }
+
+            function trash(callBack){
+                setTimeout(() => {
+                    console.log("🗑️♻️");
+                },500)
+                callBack();
+            }
+
+
+            dog(() => {
+                Kitchen(() => {
+                    trash(() => {
+                        console.log("All works Completed !! ✅")
+                    })
+                })
+            })
+            
+
+    </script>
+</body>
+</html>
