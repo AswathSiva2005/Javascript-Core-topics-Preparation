@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+            // FETCH = Function used for making HTTP requests to fetch resources.
+            //         (JSON styled datas, images, files) - resources
+            //         used for interacting with APIs to retrieve and send data over the web
+            //         fetch(url, {method: "methods" })
+            //         GET - get some resources - This is default
+            //         POST - send some datas
+            //         PUT -  replace some datas
+            //         DELETE - to delete some data
+
+            //         FETCH - always return promises
+
+
+            fetch('https://jsonplaceholder.typicode.com/todos/',{
+                method: 'POST',
+                headers: {'content-type': 'application/json'},
+                body:JSON.stringify({
+                    id: 1,
+                    name: 'Aswath',
+                    age: 21
+                })
+            })
+                .then(response => response.json())
+                .then(json => console.log(json))
+
+
+
+    </script>
+</body>
+</html>
